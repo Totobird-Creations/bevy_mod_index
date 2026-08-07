@@ -123,7 +123,6 @@ impl<I: IndexInfo> IndexStorage<I> for HashmapStorage<I> {
                         .get(target)
                         .expect("Component that was just inserted is missing!");
 
-                    println!("INSERTION");
                     storage.map.insert(&I::value(component), target);
                 },
             ))
